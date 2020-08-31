@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档 - SL&#39;s Projects Wiki</title>
+  <title>标签：Hexo - SL&#39;s Projects Wiki</title>
   
 
   
@@ -243,14 +243,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("half" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("half" == "half") { // 半屏
+    if ("none" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("half" == "full") { // 全屏
+    } else if ("none" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -263,32 +263,78 @@
         
         
 
+
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow">
-			
-			
-				
-				
-					
-						
-						<h2>2020</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/">
-									<time>08-31</time>
-									
-										Hexo蝴蝶主题美化库
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/">
+        Hexo蝴蝶主题美化库
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        前情提要:本文章的所有美化♣只能运行在🦋蝴蝶主题，如果您使用其他主题遇到问题，请不要找我!
+添加Pace.js本JS支持其他主题!但是添加方式可能不同
+Pace.js是一种网页加载进度条，它使用ajax
+官网:https://github.hubspot.com/pace/
+添加方法:
+在您的🦋蝴蝶主题配置文件的inject:  head:配置处添加
+12- &lt;script src...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        <time>2020-08-31</time>
+        
+      </div>
+      
+        <div>
+            <a class='readmore' href='/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+  
+
+
+    
+  
 </div>
 <aside class='l_side'>
   

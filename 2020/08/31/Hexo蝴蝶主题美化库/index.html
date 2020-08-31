@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档 - SL&#39;s Projects Wiki</title>
+  <title>Hexo蝴蝶主题美化库 - SL&#39;s Projects Wiki</title>
+  
+    <meta name="keywords" content="Hexo,Butterfly">
   
 
   
@@ -188,7 +188,7 @@
 
   
   
-      <div class='cover-wrapper  dock' style="display: none;">
+      <div class='cover-wrapper post dock' style="display: none;">
         
           <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
         
@@ -233,8 +233,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">Hexo蝴蝶主题美化库</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -243,14 +243,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("half" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("half" == "half") { // 半屏
+    if ("none" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("half" == "full") { // 全屏
+    } else if ("none" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -264,31 +264,261 @@
         
 
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow">
-			
-			
-				
-				
-					
-						
-						<h2>2020</h2>
-					
-						<div class='timenode'>
-								<a class="meta" href="/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/">
-									<time>08-31</time>
-									
-										Hexo蝴蝶主题美化库
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  <div class='article-header'>
+    
+    <div class="article-meta" id="top">
+      
+      
+      
+        <h1 class="title">
+          <a href="/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/">
+            Hexo蝴蝶主题美化库
+          </a>
+        </h1>
+        <div class='new-meta-box'>
+          
+            
+              
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.cn/gh/slblog-github/SRCDN/pic/logo.png">
+    <p>Hajeekn</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年8月31日</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+
+            
+          
+        </div>
+      
+    </div>
+  </div>
+
+
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    <p>前情提要:本文章的所有美化♣只能运行在🦋蝴蝶主题，如果您使用其他主题遇到问题，请不要找我!</p>
+<h1 id="添加Pace-js"><a href="#添加Pace-js" class="headerlink" title="添加Pace.js"></a>添加Pace.js</h1><p>本JS支持其他主题!但是添加方式可能不同</p>
+<p>Pace.js是一种网页加载进度条，它使用ajax</p>
+<p>官网:<a target="_blank" rel="noopener" href="https://github.hubspot.com/pace/">https://github.hubspot.com/pace/</a></p>
+<p>添加方法:</p>
+<p>在您的🦋蝴蝶主题配置文件的inject:<br>  head:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/js/pace.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/pace.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可，本美化库使用的是’Flash’主题</p>
+<p>效果:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831181148660.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831181148660.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200831181148660"></p>
+<p>这里使用的是官网的演示</p>
+<h1 id="更棒的字体"><a href="#更棒的字体" class="headerlink" title="更棒的字体"></a>更棒的字体</h1><p>本字体支持其他主题!但是添加方式可能不同</p>
+<p>该字体来自:<a target="_blank" rel="noopener" href="https://xiabor.com/">木槿</a>的博客，本人只负责扒下给各位使用</p>
+<p>添加方法:</p>
+<p>在您的🦋蝴蝶主题的source/css/_third-party文件夹处的normalize.min.css添加</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123; <span class="attribute">font-family</span>:MyFont;</span><br><span class="line"><span class="attribute">src</span>: <span class="built_in">url</span>(https://cdn.jsdelivr.net/npm/butterfly-magic-library@<span class="number">1.0</span>.<span class="number">0</span>/font/Font.woff2)&#125;</span><br><span class="line"><span class="selector-tag">body</span>&#123;<span class="attribute">font-family</span>:MyFont<span class="meta">!important</span>;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831181725985.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831181725985.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200831181725985"></p>
+<h1 id="小巧版Aplayer"><a href="#小巧版Aplayer" class="headerlink" title="小巧版Aplayer"></a>小巧版Aplayer</h1><p>本CSS支持其他主题!但添加方式可能略有不同</p>
+<p>添加方式:</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  bottom:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/aplayer.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182238012.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182238012.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200831182238012"></p>
+<p>鼠标放上后会自动跳出Cover和播放按钮，再次点击箭头后可以显示正常版吸底Aplayer</p>
+<h1 id="渐变背景"><a href="#渐变背景" class="headerlink" title="渐变背景"></a>渐变背景</h1><p>本CSS不支持其它主题!如需要请自行修改对应的CSSID</p>
+<p>添加方式:</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  head:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/banner.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182525028.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182525028.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200831182525028"></p>
+<h1 id="更好看的Button"><a href="#更好看的Button" class="headerlink" title="更好看的Button"></a>更好看的Button</h1><p>本CSS支持其它主题!但添加方式可能略有不同</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  bottom:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/bf.button.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182702467.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/slblog-github/BlogFlies/Blog/Pic/image-20200831182702467.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200831182702467"></p>
+<p>使用方法:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;地址&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;noopener&quot;</span> <span class="attr">class</span>=<span class="string">&quot;效果&quot;</span> <span class="attr">data-pjax-state</span>=<span class="string">&quot;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;one-pan-tip one-pan-tip-mark one-pan-tip-success&quot;</span>&gt;</span>文字<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中效果请自行在CSS中摸索</p>
+<h1 id="Font-Awesome字体动画效果"><a href="#Font-Awesome字体动画效果" class="headerlink" title="Font Awesome字体动画效果"></a>Font Awesome字体动画效果</h1><p>本CSS支持其它主题!但添加方式可能略有不同</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  head:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/font-awesome-animation.min.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p>百度一下不就知道了吗(bushi</p>
+<p>使用方法:</p>
+<p>百度一下不就知道了吗(bushi</p>
+<h1 id="页脚渐变"><a href="#页脚渐变" class="headerlink" title="页脚渐变"></a>页脚渐变</h1><p>本CSS不支持其它主题!</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  head:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/footer.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+<p>效果:</p>
+<p>可以看<a target="_blank" rel="noopener" href="https://blog.slqwq.cn/">我的博客</a></p>
+<h1 id="想要其他效果"><a href="#想要其他效果" class="headerlink" title="想要其他效果?"></a>想要其他效果?</h1><p>本CSS部分支持其它主题!添加方法略有不同</p>
+<p>在您的🦋蝴蝶主题的配置文件的inject:<br>  head:配置处添加</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/normalize.min.css&quot;&gt;</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">&lt;link</span> <span class="string">rel=&quot;stylesheet&quot;</span> <span class="string">href=&quot;https://cdn.jsdelivr.net/npm/butterfly-magic-library@1.0.0/css/main.style.css&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>即可</p>
+
+    
+      
+      <div class='footer'>
+        
+        
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href=https://docs.slqwq.cn/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/>https://docs.slqwq.cn/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/</a></p>
+                
+              
+            </blockquote>
+          </div>
+        
+        
+      </div>
+    
+  </div>
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-08-31T18:36:17+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年8月31日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Butterfly/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Butterfly</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://docs.slqwq.cn/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/&title=Hexo蝴蝶主题美化库 - SL's Projects Wiki&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://docs.slqwq.cn/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/&title=Hexo蝴蝶主题美化库 - SL's Projects Wiki&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://docs.slqwq.cn/2020/08/31/Hexo%E8%9D%B4%E8%9D%B6%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%E5%BA%93/&title=Hexo蝴蝶主题美化库 - SL's Projects Wiki&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="gitalk-container"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -296,103 +526,28 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">SL's Projects Wiki</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Butterfly/" style="font-size: 14px; color: #999">Butterfly</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a>
+        
     </div>
   </section>
 
 
   
 
-  
-
 
 </aside>
+
 
 
       </div>
